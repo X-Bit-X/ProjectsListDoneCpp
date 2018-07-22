@@ -5,7 +5,7 @@
 #include <ios>
 
 template<typename T>
-const T getConsoleInput()
+constexpr const T getConsoleInput()
 {
 	T input;
 	while (true)
