@@ -2,6 +2,7 @@
 #define UNITCONVERSION
 
 #include <Error.h>
+#include <vector>
 
 struct Unit
 {
@@ -63,5 +64,10 @@ private:
 	std::vector<std::string> m_types;
 
 };
+
+namespace DefaultType
+{
+	extern const Type distance({ 1, 1.61, 1609.34, 63360, 5280, 160934 }, { "Mile", "Kilometre", "Metre", "Inch", "Foot", "Centimetre" });
+}
 
 #endif // !UNITCONVERSION

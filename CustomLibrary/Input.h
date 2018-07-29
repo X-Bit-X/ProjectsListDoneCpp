@@ -2,10 +2,11 @@
 #define CUSTOMINPUT
 
 #include <limits>
-#include <ios>
+#include <iostream>
 #include <string>
+#include <type_traits>
 
-template<typename T>
+template<typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
 constexpr const T getConsoleInput()
 {
 	T input;
