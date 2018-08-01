@@ -24,7 +24,7 @@ public:
 			: m_values{ values }, m_types{ types } 
 	{
 		if (values.size() != types.size())
-			throw Error("Values and types arent't the same length.");
+			throw Error("Values and types aren't the same length.");
 	}
 
 	Type(const Type &ty)
@@ -35,7 +35,7 @@ public:
 
 	const double convert(const Unit &from, const std::string &to) const
 	{
-		auto find = [this](const std::string &target) { for (short i = 0; i < m_types.size(); i++) if (m_types[i] == target) return i; throw Error("Type non existant"); };
+		auto find = [this](const std::string &target) { for (short i = 0; i < m_types.size(); i++) if (m_types[i] == target) return i; throw Error("Type non-existant"); };
 		const short iFrom = find(from.s_type);
 		const short iTo = find(to);
 
