@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{F5B101B6-52C5-4260-84F5-25529D2D4787}</ProjectGuid>
+    <ProjectGuid>{6A53C674-B5E9-4377-85F5-57FE9CDE85C5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Calculator</RootNamespace>
+    <RootNamespace>LimitCalculator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Limit Calculator.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
