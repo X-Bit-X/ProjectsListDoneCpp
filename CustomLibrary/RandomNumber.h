@@ -44,7 +44,7 @@ class RandomGenerator
 
 public:
 
-	RandomGenerator() : m_gen{ std::random_device() } {}
+	RandomGenerator() : m_gen{ rd() } {}
 
 	template<typename Type, typename = typename std::enable_if<std::is_arithmetic<Type>::value, Type>::type>
 	constexpr Type randNumber(const Type &min, const Type &max)
@@ -58,6 +58,7 @@ public:
 private:
 
 	T m_gen;
+	std::random_device rd;
 };
 
 #endif // !RANDOMNUMBER
